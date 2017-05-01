@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #707274;
+  line-height: 30px;
+}
+body{
+  padding: 2% 5%;
+}
+h1,h2,h3,h4{
+  line-height: 30px;
+  color: black;
+}
+div{
+  padding: 1% 0;
+}
+.gris-claro{
+  color: #b5b6b7;
+}
+.gris-medio{
+  color: #707274;
+}
+.gris-oscuro{
+  color: #3E3F40;
+}
+.red{
+  color: red;
+}
+.black{
+  color: black;
+}
+.nota{
+  font-weight: bold;
+  text-decoration: underline;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #707274;
+  width: 70%;
+}
+.izquierda, .derecha{
+  width: 49%;
+  display: inline-block;
+}
+.first-part .derecha{
+  position: relative;
+  top: -95px;
+}
+.first-part .cargo{
+  position: relative;
+  top: 95px;
+}
+.first-part .tiempoOrganizacion{
+  position: relative;
+  bottom: -95px;
+}
