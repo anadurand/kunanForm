@@ -4,9 +4,373 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Kunan Form</title>
   </head>
   <body>
-    
+    <p>Antes de iniciar la inscripciòn debes leer las <span>bases del concurso.</span></p>
+    <p><span>Nota:</span> Al finalizar el formulario encontraràs el icono GUARDAR, el cual permitirà que puedas guardar la informaciòn ingresada si no
+    culminaste el formulario, dàndote la posibilidad de entrar cuando necesites concretar y/o editar antes de elegir el icono ENVIAR.</p>
+    <form class="" action="index.html" method="post">
+      <h1>Formulario de Registro</h1>
+      <div class="first-part">
+        <h2>Datos del representante de la entidad postulante</h2>
+        <div class="izquierda">
+          <div class="">
+            <label for="lastName">Apellidos</label><br>
+            <input type="text" id = "lastName" name="" value="">
+          </div>
+          <div class="">
+            <label for="birth">Fecha de Nacimiento(dd/mm/yyyy)</label><br>
+            <input type="text" id = "birth" name="" value="">
+          </div>
+          <div class="">
+            <label for="birthPlace">Regiòn de nacimiento</label><br>
+            <select class="" id = "birthPlace" name="">
+            </select>
+          </div>
+          <div class="">
+            <label for="sex">Sexo</label><br>
+            <input type="checkbox" name="" value="Masculino">Maxculino <br>
+            <input type="checkbox" name="" value="Femenino">Femenino
+          </div>
+          <div class="">
+            <label for="profesion">Profesiòn</label>
+            <input id = "profesion" type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="tiempoCargo">Tiempo en dicho cargo en cantidad de meses</label><br>
+            <input id = "tiempoCargo" type="text" name="" value="">
+          </div>
+        </div>
+        <div class="derecha">
+          <div class="">
+            <label for="name">Nombres</label><br>
+            <input type="text" id = "name" name="" value="">
+          </div>
+          <div class="">
+            <label for="age">Edad</label><br>
+            <input type="number" name="" value="">
+          </div>
+          <div class="">
+            <label for="live">Regiòn de residencia</label><br>
+            <select class="" id = "live" name="">
+            </select>
+          </div>
+          <div class="">
+            <label for="cargo">Cargo en la organizaciòn</label><br>
+            <input type="text" id = "cargo" name="" value="">
+          </div>
+          <div class="">
+            <label for="tiempoOrganizacion">Tiempo en la organizaciòn en cantidad de meses</label><br>
+            <input id = "tiempoOganizacion" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+      <div class="second-part">
+        <h2>Datos de la entidad postulante</h2>
+        <div class="izquierda">
+          <div class="">
+            <label for="entidadName">Nombre de Entidad</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="fechaOperaciones">¿Cuàndo comenzaron a operar? (dd/mm/yyyy)</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="entidadName">Tipo de organizaciòn</label><br>
+            <select class="" name="">
+
+            </select>
+          </div>
+          <div class="">
+            <label for="tyoeOrganization">Otros</label><br>
+            <input type="text" id = "typeOrganization" name="" value="">
+          </div>
+          <div class="">
+            <label for="registros">¿Està inscrita en Registros Pìblicos?</label><br>
+            <input type="checkbox" name="" value="si">Si
+            <input type="checkbox" name="" value="no">No
+          </div>
+        </div>
+        <div class="derecha">
+          <div class="">
+            <label for="intervencion">Àmbito de intervenciòn: <br>
+            ¿Cuàles son las regiones, provincias y distritos donde se sitùan sus operaciones a lo largo de toda la cadena del negocio?<br>
+            </label><br>
+            <span>Regiones</span><br>
+            <input type="checkbox" name="" value="">Amazonas...<br>
+          </div>
+          <div class="">
+            <p>Indicar las provincias en las que interviene tu emprendimiento respecto  a las regiones marcadas anteriormente.</p>
+            <label for="provincia">Provincia</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <p>Indicar las distritos en las que interviene tu emprendimiento respecto  a las provincias marcadas anteriormente.</p>
+            <label for="provincia">Distrito</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <p>Si responde "SÌ", llena las siguientes opciones:</p>
+            <label for="ruc">RUC</label><br>
+            <input type="text" id = "ruc" name="" value="">
+          </div>
+          <div class="">
+            <label for="constitucion">¿Cuàndo se constituyeron?(dd/mm/yyyy)</label><br>
+            <input type="text" id = "constitucion" name="" value="">
+          </div>
+        </div>
+      </div>
+      <div class="third-part">
+        <h2>Informaciòn estratègica de la entidad postulante</h2>
+        <p>Esta informaciòn es confidencial y no serà pùblica  en ninguna etapa del proceso de evaluaciòn.</p>
+        <div class="">
+          <label for="">¿Cuàl es el sector de la problemàtica social que se busca resolver su Organizaciòn? (Puede marcar màs de una)</label><br>
+          <input type="checkbox" name="" value="">Gènero <br>
+          <input type="checkbox">Educaciòn <br>
+          <input type="checkbox">Inclusiòn social <br>
+          <input type="checkbox">Medio ambiente <br>
+          <input type="checkbox">Salud <br>
+          <input type="checkbox">Institucionalidad <br>
+          <input type="checkbox">Turismo <br>
+          <input type="checkbox">Cultura <br>
+          <input type="checkbox">Arte <br>
+          <input type="checkbox">Diseño <br>
+          <input type="checkbox">Gastronomìa <br>
+          <input type="checkbox">Valores <br>
+          <input type="checkbox">Deporte <br>
+          <input type="checkbox">Transporte <br>
+        </div>
+        <h3>Conocimiento sobre el entorno y las problemàtica:</h3>
+        <div class="">
+          <label for="">Describa el principal problema social que busca resolver su organizaciòn.</label><br>
+          <p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea. (Màximo 80 palabras)</p>
+          <textarea id = "problemaSocial" name="name" rows="8" cols="80"></textarea>
+        </div>
+        <div class="">
+          <label for="">¿Cuàl es el pùblico objetivo directo e indirecto? (Màximo 20 palabras)</label><br>
+          <textarea name="name" id = "publicoObjetivo" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Claridad sobre la propuesta de valor</h3>
+        <div class="">
+          <label for="">Enuncie còmo su organizaciòn  aporta a la soluciòn del problema y que beneficios concretos ofrece a sus pùblicos objetivo. (Màximo 60 palabras)</label><br>
+          <textarea name="name" id = "solucion" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Detalle còmo funciona su organizaciòn considerando toda la cadena del negocio.</h3>
+        <p><span>Ejemplo:</span><br>
+        "Mi modelo consite en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesanía elaborada a base de plásticos. Luego, las contrato por 4 horas diarias de trabajo para elaborar los productos. Empezamos la venta on-line de productos. Cuando completamos el capital de 3mil soles de utilidad por artesana, pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de este momento, el 25% de las ventas de sus productos se reinvierten en nuestra organizaciòn, para sostenerla y convocar a una nueva promociòn de recicladoras".</p>
+        <div class="">
+          <label for="">Efectividad del modelo. (Màximo 100 palabras)</label><br>
+          <textarea name="name" id = "efectividadModelo" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Detalle la cualidad de los servicios o productos que ofrece y cómo destacan en el mercado.</h3>
+        <p>En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos en empaques también reusables”.</p>
+        <div class="">
+          <label for="">Calidad del servicio y/o producto. (Màximo 60 palabras)</label><br>
+          <textarea name="name" id = "calidadServicio" rows="8" cols="80"></textarea>
+        </div>
+        <h3>¿Cómo miden el impacto social de su iniciativa?</h3>
+        <p>Describa el mecanismo, los 2 principales indicadores y la mediciòn actual de los mismos.</p>
+        <div class="">
+          <label for="">Impacto social. (Màximo 100 palabras)</label><br>
+          <textarea name="name" id = "impactoSocial" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Exponga cómo su organización innova, qué procesos y elementos de su modelo son diferentes y competitivos en el mercado.</h3>
+        <div class="">
+          <label for="">Innovacòn. (Màximo 100 palabras)</label><br>
+          <textarea name="name" id = "innovacion" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Recursos humanos</h3>
+        <p>Puede indicar cero "0" si no tiene una cantidad</p>
+        <div class="izquierda">
+          <div class="">
+            <label for="">¿Cuanta gente se encarga de dirigir y gestionar la iniciativa?</label><br>
+            <input type="text" id = "gente" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Cantidad de Remunerados a tiempo completo</label><br>
+            <input type="text" id = "tiempoCompleto" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Otro</label><br>
+            <input type="text" id = "other" name="" value="">
+          </div>
+        </div>
+        <div class="derecha">
+          <div class="">
+            <label for="">Cantidad de Remunerados a tiempo parcial</label><br>
+            <input type="text" id = "tiempoParcial" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Cantidad de Talento Voluntario</label><br>
+            <input type="text" id = "voluntario" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Si llenas otro ingresa la cantidad</label><br>
+            <input type="text" id = "numberOther" name="" value="">
+          </div>
+        </div>
+        <div class="">
+          <label for="">Aliados estratègicos</label><br>
+          <p>¿Cuáles son las organizaciones aliadas de su proyecto y cómo se vinculan a su modelo? (separar los aliados por una coma " , " )</p>
+          <textarea name="name" id = "aliados" rows="8" cols="80"></textarea>
+        </div>
+        <h3>Seleccione una o más opciones que describan cómo está financiando su organización.</h3>
+        <div class="izquierda">
+          <div class="">
+            <label for="">Fuentes de Finaciamiento</label><br>
+            <input type="checkbox">He ganado uno o varios grants y/o capitales semilla <br>
+            <input type="checkbox">Cuento con inversionistas privados <br>
+            <input type="checkbox">Hago campañas de Crowdfunding <br>
+            <input type="checkbox">He sido o estoy siendo incubado por una origanizaciòn <br>
+            <input type="checkbox">Una parte o todo es por la venta de mis productos o servicios <br>
+            <input type="checkbox">Otros <br>
+          </div>
+          <div class="">
+            <label for="">Otras Fuentes de Financiamiento</label><br>
+            <input type="text" name="" value="">
+          </div>
+        </div>
+        <div class="derecha">
+          <div class="">
+            <label for="">Fondos administrativos durante el año 2014</label> <br>
+            <input type="checkbox"> <= S/. 100,000 <br>
+            <input type="checkbox"> S/. 100,001 – 200,000 <br>
+            <input type="checkbox"> S/. 200,001 – 300,000 <br>
+            <input type="checkbox"> S/. 300,001 – 400,000 <br>
+            <input type="checkbox"> S/. 400,001 – 500,000 <br>
+            <input type="checkbox"> >=S/. 500,001 <br>
+          </div>
+          <div class="">
+            <label for="">Monto Exacto: S/. </label><br>
+            <input type="text" name="" value="">
+          </div>
+        </div>
+        <div class="">
+          <label for="">¿La organización ha sido premiada antes, dentro o fuera de Perú? Si la respuesta es sí, ¿qué premios ha recibido? (Màximo 100 palabras)</label><br>
+          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+      </div>
+      <div class="fourth-part">
+        <h2>Sobre el futuro de la organización postulante</h2>
+        <div class="">
+          <label for="">¿Cuál es el principal desafío que debe afrontar para alcanzar el propósito que persigue su iniciativa y cómo lo resolverá? (Máximo 100 palabras)</label><br>
+          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+        <div class="">
+          <label for="">¿Cómo considera que el apoyo integral de Kunan podrá ayudarlo a superar sus desafíos y crecer? (Máximo 100 palabras)</label><br>
+          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+      </div>
+      <div class="fifth-part">
+        <h2>Información complementaria</h2>
+        <div class="izquierda">
+          <div class="">
+            <label for="">Pàgina web (link)</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Fanpage (link)</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Twitter:</label><br>
+            <input type="text" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Telèfono Fijo</label><br>
+            <input type="tel" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Telèfono celular</label><br>
+            <input type="tel" name="" value="">
+          </div>
+          <div class="">
+            <label for="">Correo Electrònico</label><br>
+            <input type="mail" name="" value="">
+          </div>
+        </div>
+        <div class="derecha">
+          <p>Obligatorio al menos 1 foto</p>
+          <div class="">
+            <label for="">Fotos de tu iniciativa</label><br>
+            <input type="file" name="" value="">
+            <input type="file" name="" value="">
+            <input type="file" name="" value="">
+          </div>
+          <div class="">
+            <label for="">¿Por qué medio te enteraste de la convocatoria?</label>
+            <input type="checkbox"> Amigo <br>
+            <input type="checkbox"> Web <br>
+            <input type="checkbox"> Redessociales <br>
+            <input type="checkbox"> Radio/TV <br>
+            <input type="checkbox"> Periòdico/Revista <br>
+            <input type="checkbox"> Charla <br>
+            <input type="checkbox"> Organizaciòn <br>
+            <input type="checkbox"> Universidad/Instituto <br>
+            <input type="checkbox"> Otro <br>
+          </div>
+          <div class="">
+            <label for="">Si seleccionò otros medios</label><br>
+            <input type="text" name="" value="">
+          </div>
+        </div>
+        <div class="">
+          <h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
+          <ul>
+            <li>¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
+            <li>¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
+            <li>¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
+          </ul>
+          <label for="">Link Video</label><br>
+          <input type="text" name="" value="">
+          <ol>
+            <li>El video debe tener acceso público en el canal de Youtube.</li>
+            <li>El rótulo del video debe ser: "Nombre del emprendimiento/Premio Kunan 2015".</li>
+            <li>Este video será público en una de las etapas de selección</li>
+            <li>La Edición y Formato, no serán parte del criterio de evaluación.</li>
+            <li>El excedente a los 2 minutos no será visto.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="sixth-part">
+        <h2>Declaración Jurada</h2>
+        <p>Por medio del presente formulario declaró a título personal y en representación de la organización que represento ante este Premio, que toda la información proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido, autorizo a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la información proveída y/o realicen la acción que estimen conveniente para la correcta verificación de los datos y antecedentes presentados. De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la información proveída por parte de nuestra Organización y/o de su representante oficial ante el Premio, se aceptamos que se proceda a la descalificación inmediata y a la anulación total de la postulación presentada. Dejamos expresa constancia que conocemos, respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefónica del Perú y Global Shapers Lima Hub.
+        </p>
+        <label for="">Acepto la declaración</label> <br>
+        <input type="checkbox" name="" value="">
+      </div>
+      <div class="seventh-part">
+        <h2>Enviar la postulación para su revisión</h2>
+        <p>He llenado todos los campos del formulario y quiero enviarla para concretar la postulación con éxito. <span>Recuerda: Al marcar este campo tu postulación no podrá ser editada nuevamente.</span></p>
+        <label for="">Quiero enviar mi aplicación</label>
+        <input type="checkbox" name="" value="">
+      </div>
+      <input type="submit" name="" value="">
+      <div class="">
+        Encuentra información en el <span>glosario de términos</span>
+      </div>
+    </form>
+    <footer>
+      <div class="izquierda">
+        <h4>Kunan</h4>
+        <ul>
+          <li>Premio</li>
+          <li>Comunidad</li>
+          <li>Komunicaciòn</li>
+        </ul>
+      </div>
+      <div class="derecha">
+        <h4>Sìguenos</h4>
+        <div class="">
+          <span class="face"></span>
+          <span class="instagram"></span>
+          <span class="twitter"></span>
+          <span class="youtube"></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
