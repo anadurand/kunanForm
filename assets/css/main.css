@@ -5,8 +5,11 @@
   line-height: 30px;
 }
 body{
-  padding: 2% 13%;
   margin: 0 auto;
+}
+.body{
+  padding: 2% 13% 5% 13%;
+
 }
 h1,h2,h3,h4{
   line-height: 30px;
@@ -34,7 +37,7 @@ div{
   font-weight: bold;
   text-decoration: underline;
 }
-input[type="text"] {
+input[type="text"], input[type="tel"], input[type="mail"] {
   border: none;
   border-bottom: 1px solid #707274;
   width: 70%;
@@ -82,4 +85,61 @@ textarea{
 }
 .cursiva{
   font-style: italic;
+}
+.fifth-part .izquierda{
+  position: relative;
+  top: -120px;
+}
+input[type = "file"]{
+  line-height: 35px;
+  font-size: 14px;
+  border-bottom: 1px solid;
+}
+.bold{
+  font-weight: bold;
+}
+input[type="submit"]{
+  background-color: orange;
+  width: 10%;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  left: 45%;
+}
+footer{
+  padding: 0 13%;
+  color: white;
+  background-color: #3E3F40;
+}
+footer h4{
+  color: white;
+}
+footer .izquierda h4{
+  padding: 0 8%;
+}
+footer .izquierda ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+footer .derecha{
+  position: relative;
+  top: -40px;
+  left: 200px;
+}
+footer .derecha h4{
+  position: relative;
+  left: 50px;
+}
+.enlaces span{
+  color: white;
+  font-size: 30px;
+  margin: 2%;
+}
+.final-izquierda{
+  position: relative;
+  left: 65%;
 }
