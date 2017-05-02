@@ -5,7 +5,8 @@
   line-height: 30px;
 }
 body{
-  padding: 2% 5%;
+  padding: 2% 13%;
+  margin: 0 auto;
 }
 h1,h2,h3,h4{
   line-height: 30px;
@@ -38,6 +39,10 @@ input[type="text"] {
   border-bottom: 1px solid #707274;
   width: 70%;
 }
+input{
+  font-size: 18px;
+}
+
 .izquierda, .derecha{
   width: 49%;
   display: inline-block;
@@ -53,4 +58,28 @@ input[type="text"] {
 .first-part .tiempoOrganizacion{
   position: relative;
   bottom: -95px;
+}
+.entidades{
+  font-size: 16px;
+}
+.entidades:focus{
+  color: black;
+}
+.second-part{
+  position: relative;
+}
+.second-part .izquierda{
+  position: relative;
+  top: -1020px;
+}
+.second-part .izquierda .registros{
+  position: relative;
+  top: 935px;
+}
+textarea{
+  width: 90%;
+  height: 200px;
+}
+.cursiva{
+  font-style: italic;
 }

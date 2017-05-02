@@ -19,21 +19,21 @@
         <div class="izquierda">
           <div class="">
             <label for="lastName">Apellidos</label><br>
-            <input type="text" id = "lastName" name="" value="">
+            <input type="text" id = "lastName" name="" value="" required>
           </div>
           <div class="">
             <label for="birth">Fecha de Nacimiento(dd/mm/yyyy)</label><br>
-            <input type="text" id = "birth" name="" value="">
+            <input type="text" id = "birth" name="" value="" required>
           </div>
           <div class="">
             <label for="birthPlace">Regiòn de nacimiento</label><br>
-            <select class="" id = "birthPlace" name="">
+            <select class="" id = "birthPlace" name="" required>
             </select>
           </div>
           <div class="">
-            <label for="sex">Sexo</label><br>
-            <input type="checkbox" name="" value="Masculino">Maxculino <br>
-            <input type="checkbox" name="" value="Femenino">Femenino
+            Sexo<br>
+            <input type="radio" name="sexo" value="Masculino" id = "masculino" required><label for ="masculino">Maxculino</label> <br>
+            <input type="radio" name="sexo" value="Femenino" id = "femenino"><label for ="femenino">Femenino</label>
           </div>
           <div class="">
             <label for="profesion">Profesiòn</label><br>
@@ -47,24 +47,24 @@
         <div class="derecha">
           <div class="">
             <label for="name">Nombres</label><br>
-            <input type="text" id = "name" name="" value="">
+            <input type="text" id = "name" name="" required>
           </div>
           <div class="">
             <label for="age">Edad</label><br>
-            <input type="number" name="" value="">
+            <input type="number" name="" required>
           </div>
           <div class="">
             <label for="live">Regiòn de residencia</label><br>
-            <select class="" id = "live" name="">
+            <select class="" id = "live" name="" required>
             </select>
           </div>
           <div class="cargo">
             <label for="cargo">Cargo en la organizaciòn</label><br>
-            <input type="text" id = "cargo" name="" value="">
+            <input type="text" id = "cargo" name="" value="" required>
           </div>
           <div class="tiempoOrganizacion">
             <label for="tiempoOrganizacion">Tiempo en la organizaciòn en cantidad de meses</label><br>
-            <input id = "tiempoOganizacion" type="text" name="" value="">
+            <input id = "tiempoOganizacion" type="text" name="" value="" required>
           </div>
         </div>
       </div>
@@ -73,45 +73,48 @@
         <div class="izquierda">
           <div class="">
             <label for="entidadName">Nombre de Entidad</label><br>
-            <input type="text" name="" value="">
+            <input id = "entidadName" type="text" name="" value="" required>
           </div>
           <div class="">
             <label for="fechaOperaciones">¿Cuàndo comenzaron a operar? (dd/mm/yyyy)</label><br>
-            <input type="text" name="" value="">
+            <input id = "fechaOperaciones" type="text" name="" value="" required>
           </div>
           <div class="">
-            <label for="entidadName">Tipo de organizaciòn</label><br>
-            <select class="" name="">
-
+            <label for="typeEntidad">Tipo de organizaciòn</label><br>
+            <select id = "typeEntidad" class="entidades" size="4" name="" required>
+              <option value="">ONG</option>
+              <option value="">Fundaciones</option>
+              <option value="">Asociaciòn Civil </option>
+              <option value="">Empresa</option>
+              <option value="">Persona Natural</option>
+              <option value="">Otros</option>
             </select>
           </div>
           <div class="">
             <label for="tyoeOrganization">Otros</label><br>
             <input type="text" id = "typeOrganization" name="" value="">
           </div>
-          <div class="">
-            <label for="registros">¿Està inscrita en Registros Pìblicos?</label><br>
-            <input type="checkbox" name="" value="si">Si
-            <input type="checkbox" name="" value="no">No
+          <div class="registros">
+            ¿Està inscrita en Registros Pìblicos?<span class="red">*</span><br>
+            <input type="radio" name="inscrita" id= "si" value="si" required><label for="si">Si</label><br>
+            <input type="radio" name="inscrita" id="no" value="no"><label for="no">No</label>
           </div>
         </div>
         <div class="derecha">
-          <div class="">
-            <label for="intervencion">Àmbito de intervenciòn: <br>
-            ¿Cuàles son las regiones, provincias y distritos donde se sitùan sus operaciones a lo largo de toda la cadena del negocio?<br>
-            </label><br>
-            <span>Regiones</span><br>
-            <input type="checkbox" name="" value="">Amazonas...<br>
+          <div class="" id = "intervencion">
+            <span>Àmbito de intervenciòn: </span><br>
+            <p>¿Cuàles son las regiones, provincias y distritos donde se sitùan sus operaciones a lo largo de toda la cadena del negocio?</p><br>
+            <label for="intervencion">Regiones</label><br>
           </div>
           <div class="">
             <p>Indicar las provincias en las que interviene tu emprendimiento respecto  a las regiones marcadas anteriormente.</p>
             <label for="provincia">Provincia</label><br>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required>
           </div>
           <div class="">
             <p>Indicar las distritos en las que interviene tu emprendimiento respecto  a las provincias marcadas anteriormente.</p>
             <label for="provincia">Distrito</label><br>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required>
           </div>
           <div class="">
             <p>Si responde "SÌ", llena las siguientes opciones:</p>
@@ -148,40 +151,40 @@
         <div class="">
           <label for="">Describa el principal problema social que busca resolver su organizaciòn.</label><br>
           <p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea. (Màximo 80 palabras)</p>
-          <textarea id = "problemaSocial" name="name" rows="8" cols="80"></textarea>
+          <textarea id = "problemaSocial" name="name" required></textarea>
         </div>
         <div class="">
           <label for="">¿Cuàl es el pùblico objetivo directo e indirecto? (Màximo 20 palabras)</label><br>
-          <textarea name="name" id = "publicoObjetivo" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "publicoObjetivo" required></textarea>
         </div>
         <h3>Claridad sobre la propuesta de valor</h3>
         <div class="">
           <label for="">Enuncie còmo su organizaciòn  aporta a la soluciòn del problema y que beneficios concretos ofrece a sus pùblicos objetivo. (Màximo 60 palabras)</label><br>
-          <textarea name="name" id = "solucion" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "solucion" required></textarea>
         </div>
         <h3>Detalle còmo funciona su organizaciòn considerando toda la cadena del negocio.</h3>
-        <p><span>Ejemplo:</span><br>
+        <p class="cursiva"><span>Ejemplo:</span><br>
         "Mi modelo consite en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesanía elaborada a base de plásticos. Luego, las contrato por 4 horas diarias de trabajo para elaborar los productos. Empezamos la venta on-line de productos. Cuando completamos el capital de 3mil soles de utilidad por artesana, pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de este momento, el 25% de las ventas de sus productos se reinvierten en nuestra organizaciòn, para sostenerla y convocar a una nueva promociòn de recicladoras".</p>
         <div class="">
           <label for="">Efectividad del modelo. (Màximo 100 palabras)</label><br>
-          <textarea name="name" id = "efectividadModelo" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "efectividadModelo" required></textarea>
         </div>
         <h3>Detalle la cualidad de los servicios o productos que ofrece y cómo destacan en el mercado.</h3>
-        <p>En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos en empaques también reusables”.</p>
+        <p class="cursiva">En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos en empaques también reusables”.</p>
         <div class="">
           <label for="">Calidad del servicio y/o producto. (Màximo 60 palabras)</label><br>
-          <textarea name="name" id = "calidadServicio" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "calidadServicio" required></textarea>
         </div>
         <h3>¿Cómo miden el impacto social de su iniciativa?</h3>
         <p>Describa el mecanismo, los 2 principales indicadores y la mediciòn actual de los mismos.</p>
         <div class="">
           <label for="">Impacto social. (Màximo 100 palabras)</label><br>
-          <textarea name="name" id = "impactoSocial" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "impactoSocial" required></textarea>
         </div>
         <h3>Exponga cómo su organización innova, qué procesos y elementos de su modelo son diferentes y competitivos en el mercado.</h3>
         <div class="">
           <label for="">Innovacòn. (Màximo 100 palabras)</label><br>
-          <textarea name="name" id = "innovacion" rows="8" cols="80"></textarea>
+          <textarea name="name" id = "innovacion" required></textarea>
         </div>
         <h3>Recursos humanos</h3>
         <p>Puede indicar cero "0" si no tiene una cantidad</p>
@@ -373,5 +376,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
