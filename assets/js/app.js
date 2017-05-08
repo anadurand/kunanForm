@@ -41,6 +41,10 @@ function checked(text,label){
     alert("Falta llenar campo de: " + label);
   }
 }
+function numberWords(text, length){
+  var palabras = text.value.split(" ", length);
+  
+}
 function validacion(){
   var lastName = document.getElementById("lastName");
   var name = document.getElementById("name");
@@ -60,7 +64,7 @@ function validacion(){
   var regionInter = document.getElementsByName("regionInter");
   var provinciaInter = document.getElementById("provinciaInter");
   var distritoInter = document.getElementById("distritoInter");
-  
+
 
 
   letrasMayucula(lastName, "Apellido");
