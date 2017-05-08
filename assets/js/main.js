@@ -8,6 +8,7 @@ window.addEventListener("load",function(){
   regionInter(intervencion);
 
 
+
 });
 
 var regiones = ["Amazonas", "Ancash","Apurìmac", "Arequipa","Ayacucho","Cajamarca","Callao","Cuzco", "Huancavelica","Huànuco","Ica",
@@ -29,6 +30,7 @@ function regionInter(nodo){
     var span =document.createElement("span");
     var br = document.createElement("br");
     check.type = "checkbox";
+    check.name = "regionInter";
     check.value = regiones[i];
     span.innerHTML = regiones[i];
     docF.appendChild(check);
